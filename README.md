@@ -42,5 +42,9 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-BociMed is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Shanghai BociMed Pharmaceutical Research Co., Ltd. (上海博志研新药物研究有限公司) is a Chinese pharmaceutical CRO/CDMO founded in 2012 in the Zhangjiang Pharmaceutical Valley, Shanghai. It provides small-molecule chemistry and CMC services, drug delivery technology platforms, clinical research and SMO services, global regulatory registration consulting, and commercial API/intermediate and solid-dosage manufacturing.
+
+It publishes no developer program, public API, SDK, or machine-readable specification. See `x-coverage` in `apis.yml` for the probes behind that finding.
+
+- http://www.bocimed.com/
+- http://en.bocimed.com/

@@ -1,0 +1,45 @@
+generated: '2026-08-08'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts
+notes: >-
+  Every BociMed web host answers on port 443 but presents a self-signed certificate,
+  so no host completes a trusted TLS handshake. The public site is served over plain
+  HTTP only (http://www.bocimed.com/, http://en.bocimed.com/), with no HSTS. The apex
+  bocimed.com does not answer HTTP or HTTPS at all — only www and en resolve to a
+  serving origin. Absence of a record below is observed data, not a gap in the probe.
+hosts:
+- host: www.bocimed.com
+  https: false
+  https_port_open: true
+  tls_cert_error: '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed
+    certificate (_ssl.c:1082)'
+  http: 200
+  hsts: null
+  server: wts/1.7.4
+- host: en.bocimed.com
+  https: false
+  https_port_open: true
+  tls_cert_error: '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed
+    certificate (_ssl.c:1082)'
+  http: 200
+  hsts: null
+  server: wts/1.7.4
+- host: bocimed.com
+  https: false
+  https_port_open: false
+  tls_cert_error: timed out
+  http: null
+  hsts: null
+domains:
+- domain: bocimed.com
+  dnssec: false
+  caa: []
+  spf: true
+  spf_record: v=spf1 include:spf.mail.qq.com ~all
+  dmarc: false
+  mx:
+  - 5 mxbiz1.qq.com.
+  - 10 mxbiz2.qq.com.
+  nameservers:
+  - dns21.hichina.com.
+  - dns22.hichina.com.

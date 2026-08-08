@@ -1,7 +1,16 @@
 aid: bocimed
 name: BociMed
-description: 'BociMed is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Shanghai BociMed Pharmaceutical Research Co., Ltd. (上海博志研新药物研究有限公司)
+  is a Chinese pharmaceutical CRO/CDMO founded in 2012 in the Zhangjiang Pharmaceutical
+  Valley, Shanghai, with an R&D headquarters in Zhangjiang, a production base in Lingang,
+  and a clinical subsidiary in Chengdu. BociMed offers small-molecule chemistry, CMC
+  and process development, a portfolio of drug delivery technology platforms (oral,
+  injectable, nasal, pulmonary, transdermal, ocular, implant, liposome and exosome),
+  clinical research and SMO services, global regulatory registration consulting, and
+  commercial API, intermediate and solid-dosage manufacturing. It is a laboratory
+  and manufacturing services business rather than a software vendor: it publishes a
+  marketing website in Chinese and English and no developer program, public API,
+  SDK or machine-readable specification of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/bocimed/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,12 +21,64 @@ created: '2026-08-08'
 modified: '2026-08-08'
 tags:
 - Company
-apis: []
+- Pharmaceuticals
+- Life Sciences
+- Contract Research Organization
+- CDMO
+- Drug Delivery
+- Clinical Research
+- Manufacturing
+- China
+- Shanghai
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
+- type: DomainSecurity
+  url: security/bocimed-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: http://www.bocimed.com/
+- type: WebsiteEnglish
+  url: http://en.bocimed.com/
+- type: About
+  url: http://en.bocimed.com/index.php/List/2.html
+- type: Services
+  url: http://en.bocimed.com/index.php/List/3.html
+- type: Blog
+  url: http://en.bocimed.com/index.php/List/5.html
+- type: Support
+  url: http://en.bocimed.com/index.php/List/6.html
+- type: Careers
+  url: http://en.bocimed.com/index.php/List/29.html
+x-enrichment:
+  date: '2026-08-08'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: BociMed is a Shanghai pharmaceutical CRO/CDMO selling lab, drug-delivery,
+    clinical and manufacturing services; its only web presence is a ThinkPHP marketing
+    site in Chinese and English with no developer, API or documentation section, and
+    every contract-discovery path (/openapi.json, /swagger.json, /api-docs, /graphql,
+    /llms.txt, /.well-known/*) returns a hard 404 on both hosts.
+  evidence:
+  - url: http://www.bocimed.com/
+    status: 200
+  - url: http://en.bocimed.com/
+    status: 200
+  - url: http://www.bocimed.com/openapi.json
+    status: 404
+  - url: http://en.bocimed.com/openapi.json
+    status: 404
+  - url: http://en.bocimed.com/.well-known/agent-card.json
+    status: 404
+  - url: http://en.bocimed.com/llms.txt
+    status: 404
+  - url: https://api.github.com/orgs/bocimed
+    status: 404
+  checked: '2026-08-08'
