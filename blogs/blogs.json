@@ -1,0 +1,14 @@
+{
+  "repo": "bocimed",
+  "feeds": [
+    {
+      "source": "http://en.bocimed.com/index.php/List/3.html",
+      "feed_url": "http://en.bocimed.com/index.php/List/3.html",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-15T12:22:01Z"
+}
