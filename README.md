@@ -64,9 +64,81 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Shanghai BociMed Pharmaceutical Research Co., Ltd. (上海博志研新药物研究有限公司) is a Chinese pharmaceutical CRO/CDMO founded in 2012 in the Zhangjiang Pharmaceutical Valley, Shanghai. It provides small-molecule chemistry and CMC services, drug delivery technology platforms, clinical research and SMO services, global regulatory registration consulting, and commercial API/intermediate and solid-dosage manufacturing.
+Shanghai BociMed Pharmaceutical Research Co., Ltd. (上海博志研新药物研究有限公司) is a Chinese pharmaceutical CRO/CDMO founded in 2012 in the Zhangjiang Pharmaceutical Valley, Shanghai, with an R&D headquarters in Zhangjiang, a production base in Lingang, and a clinical subsidiary in Chengdu. BociMed offers small-molecule chemistry, CMC and process development, a portfolio of drug delivery technology platforms (oral, injectable, nasal, pulmonary, transdermal, ocular, implant, liposome and exosome), clinical research and SMO services, global regulatory registration consulting, and commercial API, intermediate and solid-dosage manufacturing. It is a laboratory and manufacturing services business rather than a software vendor: it publishes a marketing website in Chinese and English and no developer program, public API, SDK or machine-readable specification of any kind.
 
-It publishes no developer program, public API, SDK, or machine-readable specification. See `x-coverage` in `apis.yml` for the probes behind that finding.
+**Areas:** Company · Pharmaceuticals · Life Sciences · Contract Research Organization · CDMO · Drug Delivery · Clinical Research · Manufacturing · China · Shanghai
 
-- http://www.bocimed.com/
-- http://en.bocimed.com/
+## BociMed on APIs.io
+
+Everything profiled for BociMed is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bocimed/](https://apis.io/providers/bocimed/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bocimed Domain Security](https://apis.io/security/bocimed/bocimed-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](http://www.bocimed.com/)
+- [Support](http://en.bocimed.com/index.php/List/6.html)
+- [Blog](http://en.bocimed.com/index.php/List/5.html)
+
+## API Evangelist rating
+
+**Kin Score 4.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 44.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bocimed/](https://apis.io/providers/bocimed/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for BociMed: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bocimed/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
